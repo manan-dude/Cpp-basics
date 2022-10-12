@@ -16,6 +16,7 @@ while(cin>>value)/*as we know value is int type so if we enter any input rather 
 {
     sum1=sum1+value;
 }
+    // here we can use it as a addition.
 
 
     cout<<"The sum of the number is:"<<sum;
