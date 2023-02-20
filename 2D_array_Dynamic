@@ -1,0 +1,49 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   
+    int row;
+    cin>>row;
+    
+    int col;
+    cin>>col;
+    
+    
+    int ** arr = new int *[row];
+    
+    for(int i=0;i<row;i++)
+    {
+        arr[i]=new int[col];// for every row we have columns
+    }
+    
+    for(int i=0;i<row;i++)
+    {
+        for(int j=0;j<col;j++)
+        {
+            cin>>arr[i][j];
+        }
+    }
+      for(int i=0;i<row;i++)
+    {
+        for(int j=0;j<col;j++)
+        {
+            cout<<arr[i][j]<<" ";
+        }
+        cout<<endl;
+    }
+    
+    //Memory free is must because its heap.
+     for(int i=0;i<row;i++)
+    {
+        delete [] arr[i];// we released the memory of array
+    }
+    
+    delete [] arr;// we released the memory of indexing array
+    
+    
+
+    return 0;
+}
