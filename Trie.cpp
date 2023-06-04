@@ -115,6 +115,13 @@ bool searchUtil(TrieNode* root ,string word)
     //recursion
     return searchUtil(child,word.substr(1));
 }
+    
+    bool search(string word)
+{
+    return searchUtil(root,word);
+}
+
+    // removal
 
 void  removalUtil(TrieNode* root ,string word)
 {
@@ -141,10 +148,6 @@ void  removalUtil(TrieNode* root ,string word)
     //recursion
     removalUtil(child,word.substr(1));
 }
-bool search(string word)
-{
-    return searchUtil(root,word);
-}
 
 
 void removal(string word)
@@ -152,6 +155,38 @@ void removal(string word)
     removalUtil(root,word);
 }
 
+    
+    //starts with
+ bool prefixUtil(TrieNode* root ,string word)
+{
+    //base case
+    if(word.size()==0)
+    {
+        //last node agar true hai to hai verna nahi 
+        return true;
+    }
+    
+    TrieNode* child;
+    int index = word[0]-'A';
+    //agar node hai toh aage badho
+    if(root->children[index]!=NULL)
+    {
+        child = root->children[index];
+    }
+    //nahi hai toh false
+    else
+    {
+        return false;
+    }
+    
+    //recursion
+    return prefixUtil(child,word.substr(1));
+}
+
+    /** Returns if there is any word in the trie that starts with the given prefix. */
+    bool startsWith(string prefix) {
+         return prefixUtil(root, prefix);
+    }
 };
 
 int main() {
