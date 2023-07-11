@@ -5,7 +5,7 @@ This project is a Node.js application that generates resumes using Adobe PDF Ser
 
 ## Table of Contents
 - [Installation](#installation)
-- [How To Run](#RuntheAPI)
+- [How To Run](#RunTheAPI)
 - [Customization](#customization)
 - [License](#license)
 
@@ -24,7 +24,7 @@ npm install @adobe/pdfservices-node-sdk
 6. Make sure the input files, such as the JSON files and template files, are available in the appropriate directories as specified in the code.
 7. Adjust the file paths in the code to match the location of your input files.
 
-## Run the API
+## RunTheAPI
 1. Run the following command to start the application:
    ```
      node main.js
