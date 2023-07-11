@@ -13,6 +13,12 @@ This project is a Node.js application that generates resumes using Adobe PDF Ser
 1. Ensure that you have Node.js installed on your system.
 2. Navigate to the project directory in a terminal or command prompt.
 3. Run the following commands to install the required dependencies:
+```
+npm install
+npm install express
+npm install @adobe/pdfservices-node-sdk
+
+```
 4. Obtain the necessary credentials for Adobe PDF Services SDK.
 5. Update the `credentials` variable in the code with your obtained credentials.
 6. Make sure the input files, such as the JSON files and template files, are available in the appropriate directories as specified in the code.
