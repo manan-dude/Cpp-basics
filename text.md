@@ -1,4 +1,4 @@
-# Project Name
+# API Setup
 
 ## Description
 This project is a Node.js application that generates resumes using Adobe PDF Services SDK.
