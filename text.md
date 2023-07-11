@@ -26,7 +26,13 @@ npm install @adobe/pdfservices-node-sdk
 
 ## Usage
 1. Run the following command to start the application:
-2. 2. The server will start running and will be listening on the specified port (default is port 3001).
+   ```
+     node main.js
+   
+   ```
+   **NOTE** First live the server using the `main.js` code either from the terminal or run the program after installing all the dependencies.
+
+2. The server will start running and will be listening on the specified port (default is port 3001).
 3. To generate a resume using the command-line interface (CLI):
 - Execute the following curl command in your terminal:
   ```
